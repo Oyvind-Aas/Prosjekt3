@@ -1,0 +1,1 @@
+**Comment: ** The last eigenvalue of matrix $A_3$ is near machine accuracy of 0, so we assume it to be zero. Therefore the matrix $A_3$ has rank 2, whereas matrix $A_4$ has rank 3
