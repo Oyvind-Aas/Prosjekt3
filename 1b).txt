@@ -1,0 +1,14 @@
+$\frac{W^T A}{W^T W H}$ matrix of ones $\Rightarrow (\frac{W^T A}{W^T W H})_{ij} = 1$. $(H_{k+1})_{ij} = (H_k)_{ij} * \frac{(W_k^T A)_{ij}}{(W_k^T W_k H_k)_{ij}} = (H_k)_{ij} * 1 = (H_k)_{ij}$. Therefore $H_{k+1} = H_{k}$.
+
+Now we set $H_{k+1} = H_k = H$.
+$$
+W H = A \Rightarrow W_k H_k = A \Rightarrow W_k^T W_k H_k = W_k^T A 
+$$
+Calculating elementwise with indices (i,j):
+$$
+\Rightarrow (H_{k+1})_{ij} * (W_k^T W_k H_k)_{ij}= (H_{k+1})_{ij} * (W^T A)_{ij} $$
+$$
+\Rightarrow (H_{k+1})_{ij} = (H_{k+1})_{ij} * \frac{(W^T A)_{ij}}{(W_k^T W_k H_k)_{ij}} = (H_{k})_{ij} * \frac{(W^T A)_{ij}}{(W_k^T W_k H_k)_{ij}} = (H_{k})_{ij}
+$$
+
+Therefore $W H = A$ $ \Rightarrow H_{k+1} = H_k$
