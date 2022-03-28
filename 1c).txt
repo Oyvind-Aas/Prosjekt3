@@ -1,0 +1,1 @@
+If $H_0$ and $W_0$ both have conatin only zero elements, then all iterates $H_k$ and $W_k$ will conatin only zeroes as well, since their elements $(H_k)_{ij}$ and $(W_k)_{ij}$ will be a multiplication between some number and zero. So if $H_0$ and $W_0$ are initialized with only zero elements, the iteration will not produce anything interesting.
