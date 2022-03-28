@@ -1,1 +1,19 @@
-$A_{ij}$
+Assume that all elements in A are non-negative, and that all elements in $H_k$ and $W_k$ > 0. Initialize $(H_0)_{ij} > 0$ and $(W_0)_{ij} > 0$. First iteration is therefore:
+$$
+(H_1)_{ij} = (H_0)_{ij} * \frac{(W_0^T A)_{ij}}{(W_0^T W_0 H_0)_{ij}}
+$$
+Since all (ij) elements needs to be bigger than 0 by assumption, multiplicatiting and dividing by elements bigger than 0  $\Rightarrow (H_1)_{ij} > 0$
+For $(W_0)_{ij}$:
+$$
+(W_1)_{ij} = (W_0)_{ij} * \frac{(A H_1^T)_{ij}}{(W_0 H_1 H_1^T)_{ij}}
+$$
+Again multiplying and dividing by elements bigger than zero $\Rightarrow (H_=)_{ij} > 0$.
+Now we assume $(H_k)_{ij} > 0, (W_k)_{ij} > 0$. For iteration of the next matrices $(W_{k+1})_{ij} > 0, (W_{k+1}))_{ij} > 0$ we get:
+$$
+(H_{k+1})_{ij} = (H_k)_{ij} * \frac{(W_k^T A)_{ij}}{(W_k^T W_k H_k)_{ij}}
+$$
+and
+$$
+(W_{k+1})_{ij} = (W_k)_{ij} * \frac{(A H_{k+1}^T)_{ij}}{(W_k H_{k+1} H_{k+1}^T)_{ij}}
+$$
+such that we only multiply and divide with positive elements. Since the first iteration gives non negative elements of the matrices, and the "next" iteration gives the same. By induction it is therefore proved that all iterations $W_k$ and $H_k$ ar non- negative
