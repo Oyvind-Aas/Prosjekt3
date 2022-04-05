@@ -1,0 +1,1 @@
+In this task we have plotted 64 images with noise added to them. Here we have set $\sigma = 0.1$. 
