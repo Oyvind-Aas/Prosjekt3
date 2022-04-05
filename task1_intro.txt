@@ -1,0 +1,3 @@
+In this task we will be looking at some properties of the NMF algorithm to get to know how it works and its potential drawbacks and limits. We do this by first investigating some of the properties of the algorithm mathematically, and then test it on the four matrices $A_1$ to $A_4$. By doing this, we'll be able to observe the results of multiple instances of the algorithm and the traits that define it. 
+
+We start by intializing the given matrices $A_1$ to $ A_4$ defined by the assignment:
