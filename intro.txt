@@ -1,0 +1,9 @@
+# Project 3 Industrial Mathematics
+
+In this project we investigate Non-negative Matrix factorization (NMF). 
+First we consider some mathematical aspects of the numerical algorithm proposed by Lee and Seung. 
+We will apply the algorithm on some simple matrices, to inevstigate how it works and some of it's properties.
+Secondly, we look at the decomposition of a CryptoPunk image set through the NMF and how this can be used to 
+determine the set's most important features. Lastly, we investigate how the algorithm can be used to denoise images.
+Here we also explore how a choice of the decomposition size ($d$) can result in either overfitting or 
+underfitting the reconstructed images.
